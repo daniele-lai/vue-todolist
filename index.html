@@ -13,14 +13,16 @@
   <title>To-do list</title>
 </head>
 <body>
-  <div id="app">
-    <h1 class="title">Lista spesa</h1>
-    <p class="subtitle venti">🍋 🥦 Scrivi cosa vuoi acquistare 🥩 🍷</p>
-    <ul>
-      <li class="articolo venti" v-for="(item, index) in spesa">{{item}} <i @click="removeItem(index)" class="fas fa-times-circle close venti"></i></li>
-    </ul>
+  <div class="wrapper">
+    <div id="app">
+      <h1 class="title">Lista spesa</h1>
+      <p class="subtitle venti">🍋 🥦 Scrivi cosa vuoi acquistare 🥩 🍷</p>
+      <input class="input_list venti" type="text" v-model="message" @keyup.13="addItem">
+      <ul>
+        <li class="articolo venti" v-for="(item, index) in spesa">{{item}} <i @click="removeItem(index)" class="fas fa-times-circle close venti"></i></li>
+      </ul>
 
-    <input class="input_list venti" type="text" v-model="message" @keyup.13="addItem">
+    </div>
   </div>
 
 

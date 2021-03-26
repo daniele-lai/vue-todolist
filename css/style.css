@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  height: 100vh;
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee 1px, transparent 0.5px);
+  background-size: 100% 18px;
+}
+
 #app {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -34,8 +43,8 @@
 
 .input_list {
 border: none;
-border-bottom: 1px solid #ccc;
-margin: 80px;
+border-bottom: 2px solid #ccc;
+margin: 50px;
 width: 300px;
 color: rgba(0,0,0,0.6);
 }

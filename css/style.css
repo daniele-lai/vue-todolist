@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.venti {
+  font-size: 20px;
+}
+
+.title {
+  margin: 20px 0 10px 0;
+  font-size: 45px;
+}
+
+.subtitle {
+  margin: 30px;
+}
+
+.articolo {
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.close {
+  color: #922417;
+  cursor: pointer;
+}
+
+.input_list {
+border: none;
+border-bottom: 1px solid #ccc;
+margin: 80px;
+width: 300px;
+color: rgba(0,0,0,0.6);
+}
+
+.input_list:focus {
+  outline: none;
+}
